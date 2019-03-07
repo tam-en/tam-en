@@ -2,7 +2,8 @@
 rust = #A64310
 spring green = #BADA55
 light slate blue = #909CC2
-purplish = #42386A, #534A77
+dark purplish = #262237
+new light purple = #5C3877
 
 */
 
@@ -22,7 +23,7 @@ body {
 .grid-wrapper {
   display: grid;
   grid-template-columns: 5fr 75px 75px 2fr 2fr 75px 75px 1fr 75px 75px 2fr 2fr 75px 75px 5fr;
-  grid-template-rows: 150px 30px 30px 10px 100px 30px 75px 30px 45px 30px 75px auto;
+  grid-template-rows: 150px 30px 30px 10px auto 30px 75px 30px 45px 30px 75px auto 200px;
 }
 
 .header-left {
@@ -44,7 +45,16 @@ body {
 	font-size: 2.5em;
 	letter-spacing: .02em;
 	line-height: 1em;
-	text-transform: uppercase;	
+	text-transform: uppercase;
+}
+
+#name > a {
+	text-decoration: none;
+	color: black;
+}
+
+#name >a:hover {
+	color: #5C3877;
 }
 
 .bottom {
@@ -66,12 +76,20 @@ body {
 	grid-area: 2 / 2 / 2 / 14;
 }
 
+.front-page-vert-line {
+	grid-area: 3 / 4 / 6 / 5;
+	border-left: 1px solid #A64310;
+}
+
+.other-page-vert-line {
+	grid-area: 3 / 4 / 15 / 5;
+	border-left: 1px solid #A64310;	
+}
+
 
 		/*#####################################*/
 		/*		          NAV                  */
 		/*#####################################*/
-
-
 
 .nav-bar {
 	grid-area: 3 / 4 / 4 / 15;
@@ -88,11 +106,10 @@ body {
 	bottom: -4px;
 }
 
-
 .nav-bar-links > a {
 	text-align: left;
 	text-decoration: none;
-	color: #534A77;
+	color: #5C3877;
 	font-weight: 400;
 	margin-right: 30px;
 	line-height: 1em;
@@ -100,6 +117,7 @@ body {
 
 .nav-bar-links > a:hover {
 	font-weight: 400;
+	color: #262237;
 	border-bottom: 3px solid #BADA55;
 }
 
@@ -108,10 +126,42 @@ body {
 	border-bottom: 1px solid #A64310;
 }
 
-.front-page-vert-line {
-	grid-area: 3 / 4 / 6 / 5;
-	border-left: 1px solid #A64310;
+.activeLink {
+	font-weight: 600 !important;
+	border-bottom: 3px solid #BADA55;	
 }
+
+
+		/*#####################################*/
+		/*	      PAGE-SPECIFIC MENU          */
+		/*#####################################*/
+
+
+.page-menu-container {
+	grid-area: 5 / 2 / 13 / 4;
+/*	grid-column: 2 / 4;
+*/	position: relative;
+}
+
+.page-menu-links {
+	text-align: right;
+	margin-right: 30px;
+	position: fixed;
+}
+
+.page-menu-links > a {
+	text-align: right;
+	text-decoration: none;
+	color: #5C3877;
+	font-weight: 400;
+	line-height: 3em;
+}
+
+.page-menu-links > a:hover {
+	font-weight: 400;
+	border-bottom: 3px solid #BADA55;
+}
+
 
 
 		/*#####################################*/
@@ -123,7 +173,12 @@ body {
 	grid-area: 5 / 4 / 6 / 13;
 	margin-left: 30px;
 	margin-top: 0px;
+}
 
+.other-page-content {
+	grid-area: 5 / 4 / 14 / 15;
+	margin-left: 30px;
+	margin-top: 0px;
 }
 
 .about-contact {
@@ -225,7 +280,9 @@ h1 {
 h2 {
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 600;
-	font-size: 2em;
+	font-size: 1.5em;
+	letter-spacing: .02em;
+	text-transform: uppercase;
 }
 
 h3, .run-in {
@@ -234,6 +291,15 @@ h3, .run-in {
 	font-size: 1em;
 	letter-spacing: .02em;
 	text-transform: uppercase;
+}
+
+a {
+	color: #5C3877;
+	}
+
+a:hover {
+	color: #262237;
+
 }
 
 
@@ -246,7 +312,7 @@ h3, .run-in {
 .footer-container {
 	display: grid;
 	grid-template-columns: 5fr 75px 75px 2fr 2fr 75px 75px 1fr 75px 75px 2fr 2fr 75px 75px 5fr;
-	position: absolute;
+	position: fixed;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -265,7 +331,7 @@ h3, .run-in {
 
 .footer-contents > a {
 	font-size: 20px;
-	color: black;
+	color: #5C3877;
 	margin: 10px 10px 0px 10px;
 	line-height: 1em;
 	text-decoration: none;
@@ -284,7 +350,8 @@ h3, .run-in {
 	.grid-wrapper {
 		display: grid;
 		grid-template-columns: 2fr 75px 75px 1fr 0px 75px 75px 0px 75px 75px 0px 1fr 75px 75px 2fr;
-		grid-template-rows: 150px 30px 30px 10px 100px 30px 75px 30px 45px 30px 75px auto;
+		grid-template-rows: 150px 30px 30px 10px auto 30px 75px 30px 45px 30px 75px auto;
+		grid-template-rows: 150px 30px 30px 10px auto 30px 75px 60px 15px 60px 75px auto;
 	}
 
 	#name {
@@ -322,7 +389,9 @@ h3, .run-in {
 	.grid-wrapper {
 		display: grid;
 		grid-template-columns: 3fr 3fr 80px 1fr 80px 3fr 3fr;
-		grid-template-rows: 175px 16px 16px 100px 16px 40px 16px 24px 16px 16px 24px 16px 16px 24px 16px 40px auto;
+/*		grid-template-rows: 175px 16px 16px auto 16px 40px 16px 24px 16px 16px 24px 16px 16px 24px 16px 40px auto;
+*/		grid-template-rows: 175px 16px 16px auto 16px 40px 24px 16px 24px 24px 16px 24px 24px 16px 24px 40px auto;
+	
 	}
 
 	.mobile_hide {
@@ -459,7 +528,7 @@ h3, .run-in {
   	.grid-wrapper {
 		display: grid;
 		grid-template-columns: 1fr 3fr 80px 1fr 80px 3fr 1fr;
-		grid-template-rows: 100px 16px 16px 120px 16px 40px 16px 24px 16px 16px 24px 16px 16px 24px 16px 40px auto;
+		grid-template-rows: 100px 16px 16px auto 8px 40px 16px 24px 16px 16px 24px 16px 16px 24px 16px 40px auto;
 	}
 
 	.mobile_hide {
