@@ -1,6 +1,10 @@
-/*rust = #A64310
-spring green = 
-light slate blue =*/
+/*
+rust = #A64310
+spring green = #BADA55
+light slate blue = #909CC2
+purplish = #42386A, #534A77
+
+*/
 
 body {
 	font-family: 'Lato', sans-serif;
@@ -9,6 +13,11 @@ body {
 	padding: 0;
 	margin: 0;
 }
+
+		/*#####################################*/
+		/*			GRID & HEADER              */
+		/*#####################################*/
+
 
 .grid-wrapper {
   display: grid;
@@ -57,9 +66,41 @@ body {
 	grid-area: 2 / 2 / 2 / 14;
 }
 
+
+		/*#####################################*/
+		/*		          NAV                  */
+		/*#####################################*/
+
+
+
 .nav-bar {
-	grid-area: 3 / 5 / 4 / 15;
+	grid-area: 3 / 4 / 4 / 15;
 	background-color: none;
+	margin-left: 30px;
+	text-align: left;
+	position: relative;
+}
+
+.nav-bar-links {
+	position: absolute;
+	width: 100%;
+	margin: 0;
+	bottom: -4px;
+}
+
+
+.nav-bar-links > a {
+	text-align: left;
+	text-decoration: none;
+	color: #534A77;
+	font-weight: 400;
+	margin-right: 30px;
+	line-height: 1em;
+}
+
+.nav-bar-links > a:hover {
+	font-weight: 400;
+	border-bottom: 3px solid #BADA55;
 }
 
 .nav-bar-line {
@@ -70,8 +111,13 @@ body {
 .front-page-vert-line {
 	grid-area: 3 / 4 / 6 / 5;
 	border-left: 1px solid #A64310;
-
 }
+
+
+		/*#####################################*/
+		/*			FRONT PAGE CONTENT         */
+		/*#####################################*/
+
 
 .front-page-content {
 	grid-area: 5 / 4 / 6 / 13;
@@ -150,6 +196,13 @@ body {
 
 }
 
+
+		/*#####################################*/
+		/*		  BASIC PARA STYLES            */
+		/*#####################################*/
+
+
+
 p {
 	font-family: 'Lato', sans-serif;
 	font-size: 1em;
@@ -183,6 +236,13 @@ h3, .run-in {
 	text-transform: uppercase;
 }
 
+
+		/*#####################################*/
+		/*			     FOOTER                */
+		/*#####################################*/
+
+
+
 .footer-container {
 	display: grid;
 	grid-template-columns: 5fr 75px 75px 2fr 2fr 75px 75px 1fr 75px 75px 2fr 2fr 75px 75px 5fr;
@@ -202,6 +262,7 @@ h3, .run-in {
 	border-top: 1px solid #A64310;
 	padding-top: 15px;
 }
+
 .footer-contents > a {
 	font-size: 20px;
 	color: black;
@@ -209,8 +270,13 @@ h3, .run-in {
 	line-height: 1em;
 	text-decoration: none;
 	padding-top: 10px
-
 }
+
+
+
+		/*#####################################*/
+		/*	    MEDIA QUERY: LARGE PAD         */
+		/*#####################################*/
 
 
 
@@ -243,9 +309,11 @@ h3, .run-in {
 	.footer-container {
 		grid-template-columns: 2fr 75px 75px 1fr 0px 75px 75px 0px 75px 75px 0px 1fr 75px 75px 2fr;
 	}
-
-
 }
+
+		/*#####################################*/
+		/*	   MEDIA QUERY: ~ MOBILE LARGE     */
+		/*#####################################*/
 
 
 
@@ -359,7 +427,6 @@ h3, .run-in {
 		height: 15px;
 		line-height: 15px;
 		margin: 0;
-
 	}
 
 	.callout-text-right {
@@ -375,12 +442,17 @@ h3, .run-in {
 	.footer-container {
 		grid-template-columns: 3fr 3fr 80px 1fr 80px 3fr 3fr;
 	}
+
 	.footer {
 		grid-column-start: 2;
 		grid-column-end: 7;
 	}
-
 }
+
+		/*#####################################*/
+		/*	   MEDIA QUERY: ~ MOBILE SMALL     */
+		/*#####################################*/
+
 
 @media only screen and (max-width: 400px) {
 
@@ -409,5 +481,4 @@ h3, .run-in {
 	.footer-container {
 		grid-template-columns: 1fr 3fr 80px 1fr 80px 3fr 1fr;
 	}
-
 }
