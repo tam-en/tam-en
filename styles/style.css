@@ -4,13 +4,14 @@ spring green = #BADA55
 light slate blue = #909CC2
 dark purplish = #262237
 new light purple = #5C3877
+even newer light purple = #703084
 
 */
 
 body {
 	font-family: 'Lato', sans-serif;
-	font-size: 15px;
-	line-height: 1.4em;
+	font-size: 16px;
+	line-height: 1.5em;
 	padding: 0;
 	margin: 0;
 }
@@ -54,7 +55,7 @@ body {
 }
 
 #name >a:hover {
-	color: #5C3877;
+	color: #703084;
 }
 
 .bottom {
@@ -103,7 +104,7 @@ body {
 	position: absolute;
 	width: 100%;
 	margin: 0;
-	bottom: -4px;
+	bottom: -5px;
 }
 
 .nav-bar-links > a {
@@ -111,7 +112,7 @@ body {
 	text-decoration: none;
 	color: #5C3877;
 	font-weight: 400;
-	margin-right: 30px;
+	margin-right: 1em;
 	line-height: 1em;
 }
 
@@ -139,14 +140,14 @@ body {
 
 .page-menu-container {
 	grid-area: 5 / 2 / 13 / 4;
-/*	grid-column: 2 / 4;
-*/	position: relative;
+	overflow: hidden;
+	grid-column: 2 / 4;
+	position: static;
 }
 
 .page-menu-links {
 	text-align: right;
 	margin-right: 30px;
-	position: fixed;
 }
 
 .page-menu-links > a {
@@ -160,6 +161,16 @@ body {
 .page-menu-links > a:hover {
 	font-weight: 400;
 	border-bottom: 3px solid #BADA55;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0;
+  margin-right: 0;
+}
+
+.sticky + .other-page-content {
+  padding-top: 60px;
 }
 
 
@@ -294,7 +305,7 @@ h3, .run-in {
 }
 
 a {
-	color: #5C3877;
+	color: #703084;
 	}
 
 a:hover {
@@ -389,18 +400,25 @@ a:hover {
 	.grid-wrapper {
 		display: grid;
 		grid-template-columns: 3fr 3fr 80px 1fr 80px 3fr 3fr;
-/*		grid-template-rows: 175px 16px 16px auto 16px 40px 16px 24px 16px 16px 24px 16px 16px 24px 16px 40px auto;
-*/		grid-template-rows: 175px 16px 16px auto 16px 40px 24px 16px 24px 24px 16px 24px 24px 16px 24px 40px auto;
+		grid-template-rows: 175px 16px 16px auto 16px 40px 24px 16px 24px 24px 16px 24px 24px 16px 24px 40px auto;
 	
 	}
 
-	.mobile_hide {
-		display:none;
-	}
+	.mobile_hide { display:none; }
 
-	.header-left {
-		display: none;
-	}
+	.header-left { display: none; }
+
+	.page-menu-container { display: none; }
+
+	.page-menu-links { display: none; }
+
+	.page-menu-links > a { display: none; }
+
+	.page-menu-links > a:hover { display: none; }
+
+	.sticky { display: none; }
+
+	.sticky + .other-page-content { display: none; }
 
 	.header-right {
 		grid-area: 1 / 2 / 2 / 7;
@@ -432,12 +450,21 @@ a:hover {
 		display: none;
 	}
 
+	.other-page-vert-line {
+		display: none;	
+	}	
+
 	.front-page-content {
 		grid-area: 4 / 2 / 5 / 7;
 		margin-left: 0px;
 		margin-top: 0px;
 
 	}
+	.other-page-content {
+		grid-area: 4 / 2 / 5 / 7;
+		margin-left: 0px;
+		margin-top: 0px;
+	}	
 
 	.about-contact {
 		grid-area: 6 / 4 / 7 / 7;

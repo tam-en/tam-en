@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-	console.log("DOM fully loaded and parsed");
+	console.log("DOM loaded and parsed for front page");
 
 
 	// GLOBAL VARIABLES
@@ -38,3 +38,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	sectionsForListening.forEach(listenAndDo);
 
 });
+
