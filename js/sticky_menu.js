@@ -3,15 +3,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	
 	window.onscroll = function() {stickMenu()};
 
-	var navbar = document.getElementById("page-menu-links");
-	var sticky = navbar.offsetTop;
+	var sidenav = document.getElementById("page-menu-links");
+	var sticky = sidenav.offsetTop;
 
 	function stickMenu() {
 	  if (window.pageYOffset >= sticky) {
-	    navbar.classList.add("sticky");
+	    sidenav.classList.add("sticky");
 	    console.log("add sticky");
 	  } else {
-	    navbar.classList.remove("sticky");
+	    sidenav.classList.remove("sticky");
 	    console.log("remove sticky")
 	  }
 	}

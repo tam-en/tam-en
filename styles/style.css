@@ -118,8 +118,7 @@ body {
 
 .nav-bar-links > a:hover {
 	font-weight: 400;
-	color: #262237;
-	border-bottom: 3px solid #BADA55;
+	color: darkgray;
 }
 
 .nav-bar-line {
@@ -128,29 +127,32 @@ body {
 }
 
 .activeLink {
-	font-weight: 600 !important;
+	font-weight: 400 !important;
+	color: #262237;	
 	border-bottom: 3px solid #BADA55;	
 }
 
 
+
 		/*#####################################*/
-		/*	      PAGE-SPECIFIC MENU          */
+		/*	      PAGE-SPECIFIC MENU           */
 		/*#####################################*/
 
 
 .page-menu-container {
 	grid-area: 5 / 2 / 13 / 4;
 	overflow: hidden;
-	grid-column: 2 / 4;
+/*	grid-column: 2 / 4;
+*/	text-align: right;
+	margin-right: 30px;	
 	position: static;
 }
 
-.page-menu-links {
+#page-menu-links {
 	text-align: right;
-	margin-right: 30px;
 }
 
-.page-menu-links > a {
+#page-menu-links > a {
 	text-align: right;
 	text-decoration: none;
 	color: #5C3877;
@@ -158,15 +160,21 @@ body {
 	line-height: 3em;
 }
 
-.page-menu-links > a:hover {
+#page-menu-links > a:hover {
 	font-weight: 400;
 	border-bottom: 3px solid #BADA55;
 }
 
+#page-menu-links > h3 {
+	line-height: 1.5em;
+}
+
 .sticky {
-  position: fixed !important;
-  top: 0;
-  margin-right: 0;
+	position: fixed !important;
+	top: 0;
+	text-align: right !important;
+    transform: translateX(23%);	
+
 }
 
 .sticky + .other-page-content {
@@ -311,6 +319,76 @@ a {
 a:hover {
 	color: #262237;
 
+}
+
+		/*#####################################*/
+		/*			    FORMulaic              */
+		/*#####################################*/
+
+form {
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+}
+
+
+input[type="text"], input[type="email"] {
+	padding: .5em;
+	margin: .5em .5em .5em 0;
+	font-size: .9em;
+	width: 50%;
+}
+
+textarea {
+	width: 100%;
+	height: 7em;
+	padding: .5em;
+	margin: .5em .5em .5em 0;
+	font-size: .9em;
+	font-weight: 400;
+	color: #703084 !important;
+}
+
+button {
+	padding: .5em 1em .5em 1em;
+	margin: .5em .5em .5em 0;	
+	background-color: #BADA55;
+	font-size: .75em;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+button:hover {
+	opacity: .75;
+}
+
+button:active {
+	font-weight: 600;
+	opacity: 1;
+}
+
+::-webkit-input-placeholder {
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+	color: #703084;
+}
+::-moz-placeholder {
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+	color: #703084;
+}
+:-ms-input-placeholder {
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+	color: #703084;
+}
+::placeholder {
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+	color: #703084;	
 }
 
 
