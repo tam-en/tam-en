@@ -121,8 +121,9 @@ body {
 	text-decoration: none;
 	color: #5C3877;
 	font-weight: 400;
-	margin-right: 1em;
+	margin-right: 1.5em;
 	line-height: 1em;
+	font-size: 15px;
 }
 
 .nav-bar-links > a:hover {
@@ -139,6 +140,10 @@ body {
 	font-weight: 400 !important;
 	color: #262237;	
 	border-bottom: 3px solid #BADA55;	
+}
+
+.bubble > img {
+	width: 100%;
 }
 
 
@@ -215,8 +220,6 @@ body {
 
 .about-bubble {
 	grid-area: 7 / 6 / 10 / 8;
-	background-image: url("../images/bada55_full_circle.png");
-	background-size: contain;
 }
 
 .writing-editing {
@@ -226,14 +229,14 @@ body {
 
 .writing-bubble {
 	grid-area: 7 / 13 / 10 / 15;
-	background-image: url("../images/bada55_full_circle.png");
-	background-size: contain;
 }
 
 .web-dev-bubble {
 	grid-area: 9 / 2 / 12 / 4;
-	background-image: url("../images/bada55_full_circle.png");
-	background-size: contain;
+}
+
+.bubble > img {
+	width: 100%;
 }
 
 .web-dev {
@@ -243,8 +246,6 @@ body {
 
 .print-bubble {
 	grid-area: 9 / 9 / 12 / 11;
-	background-image: url("../images/bada55_full_circle.png");
-	background-size: contain;
 }
 
 .print-design {
@@ -344,16 +345,22 @@ input[type="text"], input[type="email"] {
 	margin: .5em .5em .5em 0;
 	font-size: .9em;
 	width: 50%;
+	border-top: none;
+	border-right: none;
+	border-bottom: 1px solid #A64310;
+	border-left: 1px solid #A64310;
 }
 
 textarea {
-	width: 100%;
+	width: 95%;
 	height: 7em;
 	padding: .5em;
 	margin: .5em .5em .5em 0;
 	font-size: .9em;
 	font-weight: 400;
 	color: #703084 !important;
+	border: 1px solid #A64310;
+
 }
 
 button {
@@ -492,8 +499,9 @@ button:active {
 
 	.mobile_hide { display:none; }
 
-	.header-left { display: none; }
-
+	.header-left, .header-left-boot, .header-left-flower  {
+		display: none;
+	}
 	.page-menu-container { display: none; }
 
 	.page-menu-links { display: none; }
@@ -559,8 +567,6 @@ button:active {
 
 	.about-bubble {
 		grid-area: 6 / 3 / 9 / 4;
-		background-image: url("../images/bada55_full_circle.png");
-		background-size: contain;
 	}
 
 	.writing-editing {
@@ -570,14 +576,10 @@ button:active {
 
 	.writing-bubble {
 		grid-area: 11 / 3 / 15 / 4;
-		background-image: url("../images/bada55_full_circle.png");
-		background-size: contain;
 	}
 
 	.web-dev-bubble {
 		grid-area: 8 / 5 / 12 / 6;
-		background-image: url("../images/bada55_full_circle.png");
-		background-size: contain;
 	}
 
 	.web-dev {
@@ -587,8 +589,6 @@ button:active {
 
 	.print-bubble {
 		grid-area: 14 / 5 / 17 / 6;
-		background-image: url("../images/bada55_full_circle.png");
-		background-size: contain;
 	}
 
 	.print-design {
@@ -660,7 +660,7 @@ button:active {
 		font-size: 1.5em;
 	}
 
-	.header-left {
+	.header-left, .header-left-boot, .header-left-flower  {
 		display: none;
 	}
 
