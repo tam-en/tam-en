@@ -601,7 +601,7 @@ button:active {
 
 	.callout {
 		position: relative;
-		line-height: 15px;
+		line-height: 1em;
 		margin: 0;
 	}
 
@@ -623,6 +623,7 @@ button:active {
 		margin: 0;
 		text-align: right;
 		color: green;
+		background-color: beige;
 	}
 	
 
