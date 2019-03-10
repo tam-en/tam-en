@@ -615,15 +615,14 @@ button:active {
 	}
 
 	.callout-text-right {
-		position: absolute;
-		bottom: -.33em;
+/*		position: absolute;
+*/		bottom: -.33em;
 		right: 0;
 		height: 1em;
 		line-height: 1em;
 		margin: 0;
 		text-align: right;
-		color: green;
-		background-color: beige;
+		color: red;
 	}
 	
 
