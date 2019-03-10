@@ -649,7 +649,8 @@ button:active {
   	.grid-wrapper {
 		display: grid;
 		grid-template-columns: 1fr 3fr 80px 1fr 80px 3fr 1fr;
-		grid-template-rows: 80px 16px 16px auto 8px 40px 16px 24px 16px 16px 24px 16px 16px 24px 16px 40px auto;
+/*		grid-template-rows: 80px 16px 16px auto 8px 40px 16px 24px 16px 16px 24px 16px 16px 24px 16px 40px auto;
+*/		grid-template-rows: 80px 16px 16px auto 8px 40px 24px 16px 24px 24px 16px 24px 24px 16px 24px 40px auto;
 	}
 
 	.header-right > img {
