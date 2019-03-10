@@ -261,20 +261,21 @@ body {
 
 .callout-text-left {
 	position: absolute;
-	bottom: -2px;
-	right: 0;
-	height: 15px;
-	line-height: 15px;
+/*	bottom: -.33em;
+*/	right: 0;
+	height: 1em;
+	line-height: 1em;
 	margin: 0;
 
 }
 
 .callout-text-right {
 	position: absolute;
-	bottom: -2px;
-	left: 0;
-	height: 15px;
-	line-height: 15px;
+	bottom: -.33em;
+/*	bottom: -2px;
+*/	left: 0;
+	height: 1em;
+	line-height: 1em;
 	margin: 0;
 
 }
@@ -373,6 +374,7 @@ button {
 	font-weight: 600;
 	text-transform: uppercase;
 	border-radius: 0px;
+	border-style: none;
 
 }
 
