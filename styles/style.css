@@ -254,8 +254,9 @@ body {
 }
 
 .callout {
+	display: flex;
 	position: relative;
-	line-height: 15px;
+	line-height: 1em;
 	margin: 0;
 }
 
@@ -265,16 +266,17 @@ body {
 	height: 1em;
 	line-height: 1em;
 	margin: 0;
+	align-self: flex-end;
+
 }
 
 .callout-text-right {
 	position: absolute;
-	bottom: -.33em;
 	left: 0;
 	height: 1em;
 	line-height: 1em;
 	margin: 0;
-
+	align-self: flex-end;
 }
 
 
@@ -599,32 +601,31 @@ button:active {
 		border-bottom: 1px solid #A64310;
 	}
 
-	.callout {
+/*	.callout {
 		position: relative;
 		line-height: 1em;
 		margin: 0;
-	}
+	}*/
 
 	.callout-text-left {
-		position: absolute;
+/*		position: absolute;
 		bottom: -.33em;
-		left: 0;
-		height: 1em;
-		line-height: 1em;
+*/		left: 0;
+/*		height: 1em;
+		line-height: 1em;*/
 		margin: 0;
 	}
 
 	.callout-text-right {
 /*		position: absolute;
-*/		bottom: -.33em;
+		bottom: -.33em;*/
 		right: 0;
-		height: 1em;
+/*		height: 1em;
 		line-height: 1em;
-		margin: 0;
+		margin: 0;*/
 		text-align: right;
-		color: red;
 	}
-	
+
 
 	.footer-container {
 		grid-template-columns: 3fr 3fr 80px 1fr 80px 3fr 3fr;
