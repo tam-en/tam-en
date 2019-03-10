@@ -261,19 +261,16 @@ body {
 
 .callout-text-left {
 	position: absolute;
-/*	bottom: -.33em;
-*/	right: 0;
+	right: 0;
 	height: 1em;
 	line-height: 1em;
 	margin: 0;
-
 }
 
 .callout-text-right {
 	position: absolute;
 	bottom: -.33em;
-/*	bottom: -2px;
-*/	left: 0;
+	left: 0;
 	height: 1em;
 	line-height: 1em;
 	margin: 0;
@@ -610,22 +607,23 @@ button:active {
 
 	.callout-text-left {
 		position: absolute;
-		bottom: -2px;
+		bottom: -.33em;
 		left: 0;
-		height: 15px;
-		line-height: 15px;
+		height: 1em;
+		line-height: 1em;
 		margin: 0;
 	}
 
 	.callout-text-right {
 		position: absolute;
-		bottom: -2px;
+		bottom: -.33em;
 		right: 0;
-		height: 15px;
-		line-height: 15px;
+		height: 1em;
+		line-height: 1em;
 		margin: 0;
 		text-align: right;
 	}
+	
 
 	.footer-container {
 		grid-template-columns: 3fr 3fr 80px 1fr 80px 3fr 3fr;
@@ -644,15 +642,12 @@ button:active {
 
 @media only screen and (max-width: 450px) {
 
-	body {
-		font-size: 15px;
-	}
+
 
   	.grid-wrapper {
 		display: grid;
 		grid-template-columns: 1fr 3fr 80px 1fr 80px 3fr 1fr;
-/*		grid-template-rows: 80px 16px 16px auto 8px 40px 16px 24px 16px 16px 24px 16px 16px 24px 16px 40px auto;
-*/		grid-template-rows: 80px 16px 16px auto 8px 40px 24px 16px 24px 24px 16px 24px 24px 16px 24px 40px auto;
+		grid-template-rows: 80px 16px 16px auto 8px 40px 24px 16px 24px 24px 16px 24px 24px 16px 24px 40px auto;
 	}
 
 	.header-right > img {
