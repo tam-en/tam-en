@@ -37,5 +37,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	sectionsForListening.forEach(listenAndDo);
 
+	window.onscroll = function() {stickMainMenu()};
+
+	var mainnav = document.getElementById("nav-wrapper");
+	var extraSticky = mainnav.offsetTop;
+
+	function stickMenu() {
+	  if (window.pageYOffset >= extraSticky) {
+	    sidenav.classList.add("extraSticky");
+	    console.log("add extra sticky");
+	  } else {
+	    sidenav.classList.remove("extraSticky");
+	    console.log("remove extra sticky")
+	  }
+	}
+
 });
 
