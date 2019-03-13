@@ -165,17 +165,13 @@ body {
 
 .page-menu-container {
 	grid-area: 5 / 2 / 13 / 4;
-	/*overflow: hidden;*/
-/*	text-align: right;
-*/	margin-right: 30px;	
-	/*position: static;*/
+	margin-right: 30px;	
+	display: flex;
+	justify-content: flex-end;	
 }
 
 #page-menu-links {
-/*	text-align: right;
-*/	display: flexbox;
-	align-items: flex-start;
-	justify-content: flex-end;	
+	text-align: right;
 }
 
 #page-menu-links > a {
@@ -200,12 +196,9 @@ body {
 .sticky {
 	position: fixed !important;
 	top: 0;
-/*    transform: translateX(23%);	
-*/}
-
-.sticky + .other-page-content {
-  padding-top: 60px;
 }
+
+
 
 
 		/*#####################################*/
