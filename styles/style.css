@@ -65,19 +65,19 @@ body {
 	text-align: center;
 }
 
-.header-right > img {
+.header-right > a > img {
 	height: 100%;
 }
 
-.header-left > img {
+.header-left > a > img {
 	height: 50%;
 }
 
-.header-left-boot > img {
+.header-left-boot > a > img {
 	height: 80%;
 }
 
-.header-left-flower > img {
+.header-left-flower > a > img{
 	height: 65%;
 }
 
@@ -209,7 +209,7 @@ body {
 
 
 		/*#####################################*/
-		/*			FRONT PAGE CONTENT         */
+		/*			   PAGE CONTENT            */
 		/*#####################################*/
 
 .front-page-content {
@@ -288,6 +288,17 @@ body {
 	line-height: 1em;
 	margin: 0;
 	align-self: flex-end;
+}
+
+.one-line-gallery {
+	display: flex;
+	justify-content: space-between;
+	width:100%;
+}
+
+.one-line-gallery > img {
+	width: 20%;
+	height: 100%;
 }
 
 
