@@ -2,20 +2,29 @@
 <html>
 	<head>
 		<title>Tamis Nordling | About</title>
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:600,600i|Fira+Sans:400,400i,600,600i|Lato:300,300i,400,400i,700,700i" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 		<link rel="manifest" href="/site.webmanifest">
 		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 		<meta name="msapplication-TileColor" content="#da532c">
-		<meta name="theme-color" content="#ffffff">
+		<meta name="theme-color" content="#ffffff"> -->
 	</head>
 	<body>
-		<div class="grid-wrapper">
+		<div class="hamburger">
+			<div id="ham_ico" class="ham_open" alt="hamburger menu">
+				<img id="ham_closed" src="assets/hamburger_closed.svg" alt="hamburger menu">
+				<img id="ham_open" src="assets/hamburger_open.svg" class="ham_menu_off" alt="hamburger menu">
+			</div>
+		</div>
+		<div id="ham_menu_div" class="ham_menu_off"> <!-- this is the div for displaying the actual menu items -->
+		</div>	
+		<div id="grid-wrapper">
 			<div class="header-left-boot">
 				<a href="index.html">
 					<img src="images/boots_left.png" alt="work boot left" id="top">		
@@ -31,10 +40,11 @@
 					<img src="images/boots_right2.png" alt="work boot right">
 				</a>
 			</div>
+
 			<div class="header-buffer">
 			</div>
 			<div class="nav-bar">
-				<div class="nav-bar-links">
+				<div class="nav-bar-links" id="nav-bar-links">
 					<a href="about.html" class="activeLink">about | contact</a>
 					<a href="web_dev.html">web dev projects</a>
 					<a href="editorial.html">writing | editing</a>
@@ -57,7 +67,7 @@
 					<a href="#leftelbow"><em>leftelbow?</em></a>
 				</div>
 			</div>			
-			<div class="other-page-content">
+			<div class="other-page-content" id="other-page-content">
 				<br>
 				<h2 id="work">Work background</h2>
 				<p><span class="run-in">HI THERE.</span> I&rsquo;m a full-stack web developer and writer/editor with extensive experience in editorial management, electronic publishing and design (esp. Adobe Creative Suite), technical writing/editing, database publishing, and more. I worked at Adobe Systems for ten years, mostly as a technical editor; my last job there was as the chief editor of <em>Adobe Magazine</em>. I’m currently a consultant.</p>
@@ -115,12 +125,14 @@
 					<a href="https://twitter.com/tenordling" target="_blank">
 						<i class="fab fa-twitter fa-lg"></i>
 					</a>
-					<a href="https://www.facebook.com/tamis.nordling" target="_blank">
+<!-- 					<a href="https://www.facebook.com/tamis.nordling" target="_blank">
 						<i class="fab fa-facebook-square fa-lg"></i>
-					</a>
+					</a> -->
 				</div>
 			</div>
 		</div>
+	<script src="js/main_menu.js"></script>
  	<script src="js/sticky_menu.js"></script>
+ 	<!-- <script src="js/script.js"></script> -->
 	</body>
 </html>

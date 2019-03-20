@@ -37,20 +37,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	sectionsForListening.forEach(listenAndDo);
 
-	window.onscroll = function() {stickMainMenu()};
+	// window.onscroll = function() { stickMenu() };
 
-	var mainnav = document.getElementById("nav-wrapper");
-	var extraSticky = mainnav.offsetTop;
+	// var mainnav = document.getElementById("nav-wrapper");
+	// var extraSticky = mainnav.offsetTop;
 
-	function stickMenu() {
-	  if (window.pageYOffset >= extraSticky) {
-	    sidenav.classList.add("extraSticky");
-	    console.log("add extra sticky");
-	  } else {
-	    sidenav.classList.remove("extraSticky");
-	    console.log("remove extra sticky")
-	  }
-	}
+	// function stickMenu() {
+	//   if (window.pageYOffset >= extraSticky) {
+	//     sidenav.classList.add("extraSticky");
+	//     console.log("add extra sticky");
+	//   } else {
+	//     sidenav.classList.remove("extraSticky");
+	//     console.log("remove extra sticky")
+	//   }
+	// }
+
 
 });
 
