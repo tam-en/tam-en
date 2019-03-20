@@ -16,8 +16,13 @@
 	</head>
 	<body>
 		<div class="hamburger">
-			<img id="ham_ico" src="assets/hamburger_closed.svg" alt="hamburger menu" width="40px" height="40px">
-		</div>		
+			<div id="ham_ico" class="ham_open" alt="hamburger menu">
+				<img id="ham_closed" src="assets/hamburger_closed.svg" alt="hamburger menu">
+				<img id="ham_open" src="assets/hamburger_open.svg" class="ham_menu_off" alt="hamburger menu">
+			</div>
+		</div>
+		<div id="ham_menu_div" class="ham_menu_off"> <!-- this is the div for displaying the actual menu items -->
+		</div>	
 		<div id="grid-wrapper">
 			<div class="header-left-flower">
 				<a href="index.html">
@@ -37,11 +42,7 @@
 			<div class="header-buffer">
 			</div>
 			<div class="nav-bar">
-				<div class="nav-bar-links">
-					<a href="about.html" >about | contact</a>
-					<a href="web_dev.html" class="activeLink">web dev projects</a>
-					<a href="editorial.html">writing | editing</a>
-					<a href="print_design.html">print design</a>
+				<div class="nav-bar-links" id="nav-bar-links">
 				</div>
 			</div>
 			<div class="nav-bar-line">
@@ -95,12 +96,11 @@
 					<a href="https://twitter.com/tenordling" target="_blank">
 						<i class="fab fa-twitter fa-lg"></i>
 					</a>
-<!-- 					<a href="https://www.facebook.com/tamis.nordling" target="_blank">
-						<i class="fab fa-facebook-square fa-lg"></i>
-					</a> -->
+
 				</div>
 			</div>
 		</div>
-<!-- 	<script src="js/script.js"></script>-->
+		<script src="js/main_menu.js"></script>
+		<script src="js/sticky_menu.js"></script>
 	</body>
 </html>

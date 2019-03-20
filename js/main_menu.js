@@ -6,12 +6,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	fileName = (fileName[0]).toString(); // save only the characters before period in order to discard extensions, hashtags, etc.
 
 	let menuItems = [ // index 0 = menu text we want; index 1 = portion of filename that will match fileName variable
+		["home", "index"],
 		["about | contact", "about"],
 		["web dev projects", "web_dev"],
 		["writing | editing", "editorial"],
 		["print design", "print_design"]
 	];
 
+	let menuText = [];
+
+	let makeMenuItems = function(item) {
+		if(fileName != item[1]) {
+			menuText.push(`<a href="${item[1]}.html">${item[0]}</a>`);
+		} else {
+			menuText.push(`<a href="${item[1]}.html" class="activeLink">${item[0]}</a>`);
+		}
+	};
+
+	menuItems.forEach(makeMenuItems);
 
 	// If the window width is < 951, you get a hamburger menu
 	if(window.innerWidth < 951) {
@@ -26,20 +38,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			ham_menu.classList.toggle("ham_menu_items");
 		});	
 
+		document.getElementById("ham_menu_div").innerHTML = menuText.join('<br><br>');
+		console.log(menuText.join('<br>'));
 
-// If the window is > 950, you get a regular menu.
+	// If the window is > 950, you get a regular menu.
 	} else {
-		console.log("you need the desktop menu");
 
-		let menuText = function(item) {
-			if(fileName != item[1]) {
-				console.log(`<a href="${item[1]}.html">${item[0]}</a>`);
-			} else {
-				console.log(`<a href="${item[1]}.html" class="activeLink">${item[0]}</a>`);
-			}
-			};
-
-		menuItems.forEach(menuText);
-
+		document.getElementById("nav-bar-links").innerHTML = menuText.join(' ');
 	}
 });
