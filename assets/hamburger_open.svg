@@ -4,7 +4,7 @@
 	 viewBox="0 0 223 223" style="enable-background:new 0 0 223 223;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#BADA55;}
-	.st1{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:10;stroke-miterlimit:10;}
 </style>
 <circle class="st0" cx="111.5" cy="111.5" r="109"/>
 <line class="st1" x1="73.5" y1="73" x2="150.5" y2="150"/>

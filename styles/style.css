@@ -282,6 +282,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	width:100%;
+	margin-top: 1em;
 }
 
 .one-line-gallery > img {
@@ -480,7 +481,11 @@ button:active {
 	}
 
 	h2 {
-		font-size: 1.25em;
+		font-size: 1.2em;
+	}
+
+	h3, .run-in {
+		font-size: .95em;
 	}
 
 	.name-container {
@@ -536,12 +541,14 @@ button:active {
 	#ham_menu_div {
 		display: block;
 		position: fixed;
-		top: 100px;
+		top: 50px;
 		right: 0;
-		width: 50%;
-		height: 1000px;
+		width: 250px;
+		height: 400px;
 		text-align: right;
-		border-top-left-radius: 30px;
+		border-top-left-radius: 300px;
+		border-bottom-left-radius: 300px;
+		padding-top: 120px;
 	}
 
 	#ham_menu_div > a {
@@ -564,8 +571,9 @@ button:active {
 
 	.ham_menu_items {
 		background-color: white;
-		border-left: 1px solid #BADA55;
+		border-left: 3px solid #BADA55;
 		border-top: 1px solid #BADA55;
+		border-bottom: 6px solid #BADA55;
 		width: 100%;
 		padding-top: 2em;
 	}
@@ -711,7 +719,13 @@ button:active {
 	}
 
 	#ham_menu_div {
-		top: 80px;
+		top: 30px;
+		width: 175px;
+		height: 300px;
+		border-top-left-radius: 175px;
+		border-bottom-left-radius: 175px;
+		padding-top: 60px;
+		
 	}
 
 	#ham_menu_div > a {

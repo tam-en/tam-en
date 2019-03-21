@@ -32,10 +32,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			let ham_open = document.getElementById('ham_open');
 			let ham_closed = document.getElementById('ham_closed');
 			let ham_menu = document.getElementById('ham_menu_div');
+			// let page_guts = document.getElementById('other-page-content');
 			ham_open.classList.toggle("ham_menu_off");
 			ham_closed.classList.toggle("ham_menu_off");
 			ham_menu.classList.toggle("ham_menu_off");
 			ham_menu.classList.toggle("ham_menu_items");
+			// page_guts.classList.toggle("transparent")
 		});	
 
 		document.getElementById("ham_menu_div").innerHTML = menuText.join('<br><br>');
