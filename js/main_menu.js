@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	if(window.innerWidth < 951) {
 		console.log("hamburger activated!")
 		document.getElementById('ham_ico').addEventListener('click', function() {
-			let ham_open = document.getElementById('ham_open');
 			let ham_closed = document.getElementById('ham_closed');
 			let ham_menu = document.getElementById('ham_menu_div');
 			// let page_guts = document.getElementById('other-page-content');

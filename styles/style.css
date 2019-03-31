@@ -257,6 +257,8 @@ body {
 	position: relative;
 	line-height: 1em;
 	margin: 0;
+	align-self: flex-end;
+
 }
 
 .callout-text-left {
@@ -265,7 +267,8 @@ body {
 	height: 1em;
 	line-height: 1em;
 	margin: 0;
-	align-self: flex-end;
+	bottom: .75em;
+	align-self: flex-start;
 
 }
 
@@ -275,7 +278,9 @@ body {
 	height: 1em;
 	line-height: 1em;
 	margin: 0;
-	align-self: flex-end;
+	bottom: .75em;
+	justify-content: flex-start;
+	
 }
 
 .one-line-gallery {
