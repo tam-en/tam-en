@@ -313,8 +313,8 @@ h2 {
 h3, .run-in {
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 600;
-/*	font-size: 1em;
-*/	letter-spacing: .02em;
+	font-size: 1em;
+	letter-spacing: .02em;
 	text-transform: uppercase;
 }
 
