@@ -276,14 +276,42 @@ body {
 .one-line-gallery {
 	display: flex;
 	justify-content: space-between;
-	width:100%;
+/*	width:100%;
+*/	margin-top: 1em;
+}
+
+.one-line-gallery-height {
+	display: flex;
+	justify-content: space-between;
 	margin-top: 1em;
+	max-height: 175px;
 }
 
 .one-line-gallery > img {
 	width: 20%;
 	height: 100%;
 }
+
+.one-line-gallery-height > img {
+	height: 25vh;
+	width: auto;
+}
+
+.text-wrap-gallery {
+	display: flex;
+}
+
+.text-wrap-gallery > img {
+	height: 25vh;
+	width: auto;
+	margin: 10px;
+}
+
+.text-wrap-gallery > p {
+	align-self: flex-start;
+
+}
+
 
 
 		/*#####################################*/
@@ -331,6 +359,10 @@ li {
 	padding-left: 2em;
 	text-indent: -2em;
 	margin-bottom: 1em;
+}
+
+strong {
+	font-size: .95em;
 }
 
 
