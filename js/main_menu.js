@@ -1,3 +1,5 @@
+// This JS file includes functions for the main menu/hamburger menu.
+
 document.addEventListener("DOMContentLoaded", function(event) {
 	console.log("DOM loaded and parsed for menu.js");
 
@@ -25,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	menuItems.forEach(makeMenuItems);
 
-	// If the window width is < 951, you get a hamburger menu
+	// If the window width is < 951px, you get a hamburger menu
 	if(window.innerWidth < 951) {
 		console.log("hamburger activated!")
 		document.getElementById('ham_ico').addEventListener('click', function() {
@@ -47,4 +49,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 		document.getElementById("nav-bar-links").innerHTML = menuText.join(' ');
 	}
+
+
+
 });
