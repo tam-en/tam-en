@@ -1,9 +1,9 @@
+// Sticky menus turn on for non-landing pages for media with viewports >= 951px
+
 document.addEventListener("DOMContentLoaded", function(event) {
 	console.log("DOM loaded and parsed for sticky_menu");
 
 	if(window.innerWidth >= 951) {
-		console.log("loading the sticky menu script!");
-
 		window.onscroll = function() {stickMenu()};
 
 		var sidenav = document.getElementById("page-menu-links");
@@ -12,10 +12,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		function stickMenu() {
 		  if (window.pageYOffset >= sticky) {
 		    sidenav.classList.add("sticky");
-		    console.log("add sticky");
 		  } else {
 		    sidenav.classList.remove("sticky");
-		    console.log("remove sticky")
 		  }
 		}
 	};

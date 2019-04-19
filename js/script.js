@@ -1,6 +1,8 @@
+// This JS file powers the listeners for the landing page
+// so that the graphics and corresponding text respond as units during mouseovers
+
 document.addEventListener("DOMContentLoaded", function(event) {
 	console.log("DOM loaded and parsed for front page");
-
 
 	// GLOBAL VARIABLES
 	const sectionsForListening = [
