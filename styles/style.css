@@ -270,20 +270,12 @@ body {
 	flex-direction: row-reverse;	
 }
 
+.callout-right > h3,
 .callout-left > h3 {
 	line-height: 1em;
 }
 
-.callout-right > h3  {
-	line-height: 1em;	
-}
-
-.one-line-gallery {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 1em;
-}
-
+.one-line-gallery,
 .one-line-gallery-height {
 	display: flex;
 	justify-content: space-between;
@@ -319,18 +311,19 @@ body {
 	height: 30vh;
 	width: auto;
 	margin: 10px 0px 10px 20px;
-
 }
 
-.text-wrap-gallery .text-wrap-gallergy-reverse > p {
+.text-wrap-gallery >p,
+.text-wrap-gallergy-reverse > p {
 	align-self: flex-start;
 }
 
-.hide-me {
-	display: none;
+.text-wrap-gallery > a,
+.text-wrap-gallery-reverse > a,
+.one-line-gallery > a,
+.one-line-gallery-height > a {
+	text-decoration: none;
 }
-
-
 
 		/*#####################################*/
 		/*		  BASIC PARA STYLES            */
@@ -627,6 +620,32 @@ button:active {
 		display: grid;
 		grid-template-columns: 3fr 3fr 80px 1fr 80px 3fr 3fr;
 		grid-template-rows: 100px 16px 16px auto 16px 40px 24px 16px 24px 24px 16px 24px 24px 16px 24px 40px auto;
+	}
+
+	.text-wrap-gallery,
+	.text-wrap-gallery-reverse {
+		display: block;
+	}
+
+	.text-wrap-gallery-reverse > img,
+	.text-wrap-gallery > img {
+		width: 40%;
+		height: auto;
+		margin: 10px 20px 10px 0;
+	}
+
+	.one-line-gallery,
+	.one-line-gallery-height {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+
+	.one-line-gallery-height > img,
+	.one-line-gallery > img {
+		height: 20vh;
+		width: auto;
+		margin: 10px 20px 10px 0;
 	}
 
 	.mobile_hide { display:none; }
