@@ -65,19 +65,19 @@ body {
 	text-align: center;
 }
 
-.header-right > a > img {
+.header-right > img {
 	height: 100%;
 }
 
-.header-left > a > img {
+.header-left > img {
 	height: 50%;
 }
 
-.header-left-boot > a > img {
+.header-left-boot > img {
 	height: 80%;
 }
 
-.header-left-flower > a > img{
+.header-left-flower > img{
 	height: 65%;
 }
 
