@@ -17,11 +17,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	let menuText = [];
 
-	let makeMenuItems = function(item) {
-		console.log("fileName=",fileName);
-		if((fileName != item[1]) && (fileName != "")) {
+	let makeMenuItems = function(item) {	
+		if(fileName != item[1]) {
 			menuText.push(`<a href="${item[1]}.html">${item[0]}</a>`);
-			console.log("menuText =", menuText)
+		} else if (fileName = ""){
+			menuText.push(`<a href="${item[1]}.html" class="activeLink">${item[0]}</a>`);
 		} else {
 			menuText.push(`<a href="${item[1]}.html" class="activeLink">${item[0]}</a>`);
 		}
