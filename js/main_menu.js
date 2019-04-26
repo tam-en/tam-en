@@ -18,10 +18,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	let menuText = [];
 
 	let makeMenuItems = function(item) {	
-		if(fileName != item[1]) {
-			menuText.push(`<a href="${item[1]}.html">${item[0]}</a>`);
-		} else if (fileName = ""){
+		if(fileName = ""){
 			menuText.push(`<a href="${item[1]}.html" class="activeLink">${item[0]}</a>`);
+		} else if(fileName != item[1]){
+			menuText.push(`<a href="${item[1]}.html">${item[0]}</a>`);
 		} else {
 			menuText.push(`<a href="${item[1]}.html" class="activeLink">${item[0]}</a>`);
 		}
