@@ -19,19 +19,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	let makeMenuItems = function(item) {
 		console.log(`fileName= .${fileName}.`);	
-		if((fileName != item[1]) && (fileName !="")) {
+		if(!fileName || fileName == item[1]) {
+			console.log("option 1 ran");
+			menuText.push(`<a href="${item[1]}.html" class="activeLink">${item[0]}</a>`);
+		} 
+		else {
 			console.log("option 2 ran");
 			menuText.push(`<a href="${item[1]}.html">${item[0]}</a>`);
-		} else {
-			console.log("option 3 ran");
-			menuText.push(`<a href="${item[1]}.html" class="activeLink">${item[0]}</a>`);
-		}
+		} 
 	};
 
 	menuItems.forEach(makeMenuItems);
 
 	// If the window width is < 951px, you get a hamburger menu
-	if(window.innerWidth < 951) {
+	if(window.innerWidth < 951 && (fileName && fileName != "index"))  {
 		console.log("hamburger activated!")
 		document.getElementById('ham_ico').addEventListener('click', function() {
 			let ham_closed = document.getElementById('ham_closed');
