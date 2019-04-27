@@ -18,21 +18,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	let menuText = [];
 
 	let makeMenuItems = function(item) {
-		console.log(`fileName= ..${fileName}.`);	
-		console.log("item[0]=", item[0]);
 		if(fileName != item[1]) {
-			console.log("option 1: fileName != item[1]")
 			if(fileName == "" && item[0] == "home") {
-				console.log("option 1.1: fileName == blank");
 				menuText.push(`<a href="${item[1]}.html" class="activeLink">${item[0]}</a>`);
 			} 
 			else {				
-				console.log("option 1.2: fileName != blank");
 				menuText.push(`<a href="${item[1]}.html">${item[0]}</a>`);
 			}
 		}
 		else {
-			console.log("else option 2: fileName does = item[1]")
 			menuText.push(`<a href="${item[1]}.html" class="activeLink">${item[0]}</a>`);
 		}
 	};
@@ -41,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	// If the window width is < 951px, you get a hamburger menu
 	if(window.innerWidth < 951 && (fileName && fileName != "index"))  {
-		console.log("hamburger activated!")
 		document.getElementById('ham_ico').addEventListener('click', function() {
 			let ham_closed = document.getElementById('ham_closed');
 			let ham_menu = document.getElementById('ham_menu_div');
@@ -58,7 +51,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	// If the window is > 950, you get a regular menu.
 	} else {
-
 		document.getElementById("nav-bar-links").innerHTML = menuText.join(' ');
 	}
 
