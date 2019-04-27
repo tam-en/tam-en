@@ -19,9 +19,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	let makeMenuItems = function(item) {
 		console.log(`fileName= ..${fileName}.`);	
+		console.log(menuText);
 		if(fileName != item[1]) {
 			console.log("option 1: fileName != item[1]")
-			if(fileName == "") {
+			if(fileName == "" && item[1] == "home") {
 				console.log("option 1.1: fileName == blank");
 				menuText.push(`<a href="${item[1]}.html" class="activeLink">${item[0]}</a>`);
 			} 
