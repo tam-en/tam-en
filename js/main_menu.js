@@ -18,15 +18,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	let menuText = [];
 
 	let makeMenuItems = function(item) {
-		console.log(`fileName= .${fileName}.`);	
-		if(!fileName || fileName == item[1]) {
-			console.log("option 1 ran");
-			menuText.push(`<a href="${item[1]}.html" class="activeLink">${item[0]}</a>`);
-		} 
+		console.log(`fileName= ..${fileName}.`);	
+		if(fileName != item[1]) {
+			console.log("option 1: fileName != item[1]")
+			if(fileName == "") {
+				console.log("option 1.1: fileName == blank");
+				menuText.push(`<a href="${item[1]}.html" class="activeLink">${item[0]}</a>`);
+			} 
+			else {				
+				console.log("option 1.2: fileName != blank");
+				menuText.push(`<a href="${item[1]}.html">${item[0]}</a>`);
+			}
+		}
 		else {
-			console.log("option 2 ran");
-			menuText.push(`<a href="${item[1]}.html">${item[0]}</a>`);
-		} 
+			console.log("else option 2: fileName does = item[1]")
+			menuText.push(`<a href="${item[1]}.html" class="activeLink">${item[0]}</a>`);
+		}
 	};
 
 	menuItems.forEach(makeMenuItems);
