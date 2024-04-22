@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	let menuItems = [ // index 0 = menu text we want; index 1 = portion of filename that will match fileName variable
 		["home", "index"],
-		["about | contact", "about"],
+		["about", "about"],
 		["writing | editing", "editorial"],
 		["design | publishing", "design_publishing"],
 		["web dev | CMS", "web_dev"]
