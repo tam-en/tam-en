@@ -1,0 +1,1 @@
+(function(){"use strict";ready(function(){"function"!=typeof Plyr||(Plyr.setup(".plyr"),each(".content iframe",function(a,b){if(/(youtube|vimeo)/.test(a.src)){var c=document.createElement("div");a.parentNode.appendChild(c),c.appendChild(a);var d="video-"+Util.getPageId()+"-"+b;c.id=d,new Plyr("#"+d)}}))})})();

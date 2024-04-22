@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	let menuItems = [ // index 0 = menu text we want; index 1 = portion of filename that will match fileName variable
 		["home", "index"],
 		["about | contact", "about"],
-		["web dev", "web_dev"],
 		["writing | editing", "editorial"],
-		["print design", "print_design"]
+		["design | publishing", "design_publishing"],
+		["web dev | CMS", "web_dev"]
 	];
 
 	let menuText = [];
@@ -53,7 +53,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	} else {
 		document.getElementById("nav-bar-links").innerHTML = menuText.join(' ');
 	}
-
-
 
 });

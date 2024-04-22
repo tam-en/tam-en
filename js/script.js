@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		["about-contact", "about-bubble", "about.html"],
 		["writing-editing", "writing-bubble", "editorial.html"],
 		["web-dev", "web-dev-bubble", "web_dev.html"],
-		["print-design", "print-bubble", "print_design.html"]
+		["print-design", "print-bubble", "design_publishing.html"]
 	];
 
 	function listenAndDo(section) {

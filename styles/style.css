@@ -1,4 +1,4 @@
-/*
+/*callout-left
 	rust = #A64310
 	spring green = #BADA55
 	dark purplish = #262237
@@ -234,7 +234,7 @@ body {
 	grid-area: 7 / 13 / 10 / 15;
 }
 
-.web-dev-bubble {
+.print-bubble {
 	grid-area: 9 / 2 / 12 / 4;
 }
 
@@ -242,16 +242,16 @@ body {
 	width: 100%;
 }
 
-.web-dev {
+.print-design {
 	grid-area: 10 / 4 / 11 / 7;
 	border-bottom: 1px solid #A64310;
 }
 
-.print-bubble {
+.web-dev-bubble {
 	grid-area: 9 / 9 / 12 / 11;
 }
 
-.print-design {
+.web-dev {
 	grid-area: 10 / 11 / 11 / 14;
 	border-bottom: 1px solid #A64310;
 }
@@ -324,6 +324,25 @@ body {
 .one-line-gallery-height > a {
 	text-decoration: none;
 }
+.shadow {
+	box-shadow: 5px 5px 15px gray;
+}
+
+#aboutPopUp {
+	position: fixed;
+	top:  4em;
+	left:  50%;
+	transform: translate(-50%, 0);
+	z-index: 100;
+	height:  auto;
+	width:  calc(100% - 16em);
+	border:  1px solid #A64310;
+	padding:  2em;
+	background-color: white;
+	border-radius:  1em;
+	box-shadow: 5px 5px 15px gray;
+
+}
 
 		/*#####################################*/
 		/*		  BASIC PARA STYLES            */
@@ -384,7 +403,7 @@ li {
 .bullets-on > li {
 	list-style: outside;
 	padding-left: -2em;
-	text-indent: 0;
+	text-indent: 0em;
 	margin-bottom: .5em;
 }
 
@@ -735,20 +754,21 @@ button:active {
 		grid-area: 11 / 3 / 15 / 4;
 	}
 
-	.web-dev-bubble {
+
+	.print-bubble {
 		grid-area: 8 / 5 / 12 / 6;
 	}
 
-	.web-dev {
+	.print-design {
 		grid-area: 9 / 2 / 10 / 5;
 		border-bottom: 1px solid #A64310;
 	}
 
-	.print-bubble {
+ 	.web-dev-bubble {
 		grid-area: 14 / 5 / 17 / 6;
 	}
 
-	.print-design {
+  	.web-dev {
 		grid-area: 15 / 2 / 16 / 5;
 		border-bottom: 1px solid #A64310;
 	}
