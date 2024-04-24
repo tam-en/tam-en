@@ -256,22 +256,26 @@ body {
 	border-bottom: 1px solid #A64310;
 }
 
-.callout-right {
+.callout-about, 
+.callout-write {
 	display: flex;
 	height: 1.75em;
 	align-self: flex-end;
 	align-content: flex-end;
 }
 
-.callout-left {
+.callout-design,
+.callout-web {
 	display: flex;
 	height: 1.75em;
 	align-self: flex-end;
 	flex-direction: row-reverse;	
 }
 
-.callout-right > h3,
-.callout-left > h3 {
+.callout-about > h3,
+.callout-write > h3, 
+.callout-web > h3,
+.callout-design > h3 {
 	line-height: 1em;
 }
 
@@ -737,31 +741,31 @@ button:active {
 	.about-contact {
 		grid-area: 6 / 4 / 7 / 7;
 		border-bottom: 1px solid #A64310;
-		text-align: right;
 	}
 
 	.about-bubble {
 		grid-area: 6 / 3 / 9 / 4;
 	}
 
+
 	.writing-editing {
-		grid-area: 12 / 4 / 13 / 7;
+		grid-area: 9 / 2 / 10 / 5;
 		border-bottom: 1px solid #A64310;
-		text-align: right;
 	}
 
 	.writing-bubble {
-		grid-area: 11 / 3 / 15 / 4;
+		grid-area: 8 / 5 / 12 / 6;
 	}
 
 
 	.print-bubble {
-		grid-area: 8 / 5 / 12 / 6;
+		grid-area: 11 / 3 / 15 / 4;
 	}
 
 	.print-design {
-		grid-area: 9 / 2 / 10 / 5;
+		grid-area: 12 / 4 / 13 / 7;
 		border-bottom: 1px solid #A64310;
+		text-align: right;
 	}
 
  	.web-dev-bubble {
@@ -773,18 +777,12 @@ button:active {
 		border-bottom: 1px solid #A64310;
 	}
 
-	.callout-left {
-		flex-direction: row;
+	.callout-about {
+		flex-direction: row-reverse;	
 	}
 
-	.callout-right {
-		flex-direction: row-reverse;
-	}
-
-	.callout-left > h3 {
-	}
-
-	.callout-right > h3 {
+	.callout-web {
+		flex-direction: row;	
 	}
 
 	.footer-container {
